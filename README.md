@@ -81,5 +81,6 @@ npx --yes github:lucasonmars/modelconfigkit query --task text-to-image
 
 ## 许可
 
-- 代码：MIT
-- 聚合数据：遵循上游条款，来源见 `manifest.sources`
+本仓库采用 [PolyForm Noncommercial 1.0.0](LICENSE)：**不允许商用**（个人学习、研究、非营利组织等许可范围内用途可用；商业产品/收费服务需另行授权）。
+
+聚合进包内的上游模型元数据仍遵循各来源原有条款，见 `manifest.sources`。

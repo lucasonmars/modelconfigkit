@@ -2,5 +2,5 @@
   "name": "modelconfigkit",
   "description": "Download once. Configure any model. Embeddable AI model config knowledge base — users fill provider + model + API key; endpoints, params, and multimodal formats included.",
   "homepage": "https://github.com/lucasonmars/modelconfigkit",
-  "license": "MIT"
+  "license": "PolyForm-Noncommercial-1.0.0"
 }
