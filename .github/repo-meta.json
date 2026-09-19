@@ -1,0 +1,6 @@
+{
+  "name": "providerkit",
+  "description": "Download once. Configure any model. Embeddable AI model config kit — users fill provider + model + API key; defaults and adapters handle the rest.",
+  "homepage": "https://github.com/lucasonmars/providerkit",
+  "license": "MIT"
+}

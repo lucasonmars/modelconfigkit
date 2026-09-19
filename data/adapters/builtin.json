@@ -1,0 +1,169 @@
+[
+  {
+    "provider": "openai",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://api.openai.com",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "param_mapping": {
+      "max_tokens": "max_completion_tokens"
+    },
+    "unsupported_params": ["top_k", "min_p", "repetition_penalty"],
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_image_url"
+  },
+  {
+    "provider": "anthropic",
+    "models": ["*"],
+    "api_style": "anthropic-messages",
+    "base_url": "https://api.anthropic.com",
+    "endpoint": "/v1/messages",
+    "auth": "x-api-key",
+    "headers": {
+      "anthropic-version": "2023-06-01"
+    },
+    "param_mapping": {
+      "max_completion_tokens": "max_tokens"
+    },
+    "unsupported_params": ["frequency_penalty", "presence_penalty", "logit_bias"],
+    "defaults": {
+      "max_tokens": 4096,
+      "temperature": 1
+    },
+    "multimodal_format": "anthropic_base64"
+  },
+  {
+    "provider": "google",
+    "models": ["*"],
+    "api_style": "gemini-generate",
+    "base_url": "https://generativelanguage.googleapis.com",
+    "endpoint": "/v1beta/models/{model}:generateContent",
+    "auth": "query",
+    "param_mapping": {
+      "max_tokens": "maxOutputTokens",
+      "top_p": "topP",
+      "top_k": "topK",
+      "temperature": "temperature"
+    },
+    "unsupported_params": ["frequency_penalty", "presence_penalty"],
+    "defaults": {
+      "temperature": 1
+    },
+    "multimodal_format": "gemini_inline_data"
+  },
+  {
+    "provider": "deepseek",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://api.deepseek.com",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "param_mapping": {},
+    "unsupported_params": ["logit_bias"],
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "moonshotai",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://api.moonshot.ai",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.3
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "alibaba",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://dashscope-intl.aliyuncs.com/compatible-mode",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "openrouter",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://openrouter.ai/api",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "ollama",
+    "models": ["*"],
+    "api_style": "ollama",
+    "base_url": "http://127.0.0.1:11434",
+    "endpoint": "/api/chat",
+    "auth": "none",
+    "param_mapping": {
+      "max_tokens": "num_predict"
+    },
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "vllm",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "siliconflow",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://api.siliconflow.cn",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "groq",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "base_url": "https://api.groq.com/openai",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "unsupported_params": ["top_k"],
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  },
+  {
+    "provider": "*",
+    "models": ["*"],
+    "api_style": "openai-chat",
+    "endpoint": "/v1/chat/completions",
+    "auth": "bearer",
+    "defaults": {
+      "temperature": 0.7
+    },
+    "multimodal_format": "openai_compatible"
+  }
+]

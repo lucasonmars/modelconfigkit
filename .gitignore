@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# 更新机制与厂商文档地址不纳入本仓库（见 ../provider-ops）
+ops/
+provider-ops/
+sources/
+provider_docs.yaml
+*.snapshot.md

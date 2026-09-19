@@ -1,0 +1,60 @@
+{
+  "name": "providerkit",
+  "version": "0.1.0",
+  "description": "可嵌入的 AI 模型配置知识库：只填供应商 + 模型 + API Key，其余参数自动适配。Download once — configure any model.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./registry": "./data/registry.json",
+    "./package.json": "./package.json"
+  },
+  "bin": {
+    "providerkit": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "data",
+    "LICENSE",
+    "README.md",
+    "README.zh-CN.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "import:registry": "node scripts/import-registry.mjs",
+    "stats": "node scripts/stats.mjs",
+    "test": "node --test dist/**/*.test.js",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm",
+    "provider",
+    "model-config",
+    "model-registry",
+    "adapter",
+    "openai-compatible",
+    "multimodal",
+    "ai-sdk"
+  ],
+  "author": "lucasonmars",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasonmars/providerkit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lucasonmars/providerkit/issues"
+  },
+  "homepage": "https://github.com/lucasonmars/providerkit#readme",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.10",
+    "typescript": "^5.8.2"
+  }
+}
