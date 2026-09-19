@@ -1,6 +1,6 @@
 {
   "name": "modelconfigkit",
-  "description": "Download once. Configure any model. Embeddable AI model config kit — users fill provider + model + API key; defaults and adapters handle the rest.",
+  "description": "Download once. Configure any model. Embeddable AI model config knowledge base — users fill provider + model + API key; endpoints, params, and multimodal formats included.",
   "homepage": "https://github.com/lucasonmars/modelconfigkit",
   "license": "MIT"
 }
