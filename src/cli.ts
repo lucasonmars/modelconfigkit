@@ -2,13 +2,13 @@
 import { loadBundledRegistry, getStats, queryModels, resolveConfig, listProviders } from "./index.js";
 
 function usage(): never {
-  console.log(`providerkit — embedded AI model config kit
+  console.log(`modelconfigkit — embedded AI model config kit
 
 Usage:
-  providerkit stats
-  providerkit providers
-  providerkit query --task <task> [--input text] [--output image]
-  providerkit resolve --provider <p> --model <m> [--temperature 0.2]
+  modelconfigkit stats
+  modelconfigkit providers
+  modelconfigkit query --task <task> [--input text] [--output image]
+  modelconfigkit resolve --provider <p> --model <m> [--temperature 0.2]
 
 Philosophy: fill only provider + model + apiKey; defaults handle the rest.
 `);

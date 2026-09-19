@@ -1,7 +1,7 @@
 {
-  "name": "providerkit",
+  "name": "modelconfigkit",
   "version": "0.1.0",
-  "description": "可嵌入的 AI 模型配置知识库：只填供应商 + 模型 + API Key，其余参数自动适配。Download once — configure any model.",
+  "description": "Download once. Configure any model. Embeddable model config knowledge base — provider + model + API key; endpoints, params, multimodal formats included.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,7 +14,7 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "providerkit": "./dist/cli.js"
+    "modelconfigkit": "./dist/cli.js"
   },
   "files": [
     "dist",
@@ -44,12 +44,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lucasonmars/providerkit.git"
+    "url": "git+https://github.com/lucasonmars/modelconfigkit.git"
   },
   "bugs": {
-    "url": "https://github.com/lucasonmars/providerkit/issues"
+    "url": "https://github.com/lucasonmars/modelconfigkit/issues"
   },
-  "homepage": "https://github.com/lucasonmars/providerkit#readme",
+  "homepage": "https://github.com/lucasonmars/modelconfigkit#readme",
   "engines": {
     "node": ">=18"
   },
