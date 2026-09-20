@@ -1,7 +1,7 @@
 {
   "name": "modelconfigkit",
   "version": "0.1.0",
-  "description": "Download once. Configure any model. Embeddable model config knowledge base — provider + model + API key; endpoints, params, multimodal formats included.",
+  "description": "Download once. Give your software AI without drowning in model settings — provider + model + API key; endpoints, params, multimodal formats included.",
   "type": "module",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -14,14 +14,14 @@
     "./package.json": "./package.json"
   },
   "bin": {
-    "modelconfigkit": "./dist/cli.js"
+    "modelconfigkit": "dist/cli.js"
   },
   "files": [
     "dist",
     "data",
     "LICENSE",
     "README.md",
-    "README.en.md"
+    "README.zh-CN.md"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
