@@ -29,7 +29,7 @@ With ModelConfigKit, your product surface stays simple: pick a vendor, pick a mo
 | Model | Capabilities, limits, directional tasks (chat, VQA, text-to-image, TTS, …) |
 | API Key | Used only locally — never sent through a third party |
 
-Bundled registry size (regenerate with `npm run import:registry`): about **9,900+** model deployments, **300+** providers, **12** built-in adapters. Data reused from [models.dev](https://models.dev) and [LiteLLM](https://github.com/BerriAI/litellm).
+Bundled registry size (regenerate with `npm run import:registry`): about **10,200+** model deployments, **300+** providers, **12** built-in adapters. Data reused from [models.dev](https://models.dev) and [LiteLLM](https://github.com/BerriAI/litellm).
 
 ## Install
 
